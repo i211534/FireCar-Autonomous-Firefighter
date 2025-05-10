@@ -1,0 +1,146 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #1a1a1a, #000000);
+  transition: background-color 0.5s ease;
+}
+
+.alertBanner {
+  width: 100%;
+  max-width: 90%; /* Adjust banner width */
+  padding: 1.2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.alert {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.allClear {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.cameraFeed {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedTitle {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.feedPlaceholder {
+  width: 100%;
+  max-width: 100%; /* Ensure the placeholder doesn't exceed container width */
+  height: auto;
+  aspect-ratio: 16 / 9; /* Maintain a responsive aspect ratio */
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #d32f2f;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  color: #cccccc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cameraImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.controlPanel {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  gap: 1.2rem;
+  justify-content: center; /* Center buttons */
+}
+
+.controlButton {
+  padding: 1rem 2.5rem;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.controlButton:hover {
+  background-color: #b71c1c;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .feedPlaceholder {
+    height: auto;
+    max-width: 90%;
+  }
+
+  .feedTitle {
+    font-size: 1.8rem;
+  }
+
+  .controlButton {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .feedTitle {
+    font-size: 1.6rem;
+  }
+
+  .feedPlaceholder {
+    height: auto;
+    aspect-ratio: 4 / 3; /* Adjust aspect ratio for smaller screens */
+  }
+
+  .controlButton {
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedTitle {
+    font-size: 1.4rem;
+  }
+
+  .controlButton {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}

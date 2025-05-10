@@ -1,0 +1,106 @@
+/* src/app/components/Navigation.module.css */
+
+.navbar {
+  width: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 50%, rgba(0,0,0,1) 100%);
+  padding: 1.2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid #333;
+  transition: background 0.4s ease;
+  position: relative;
+}
+
+.logo a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.logo a:hover {
+  color: #ff4c4c;
+  transform: scale(1.1);
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.navLinks li {
+  font-size: 1.3rem;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navLinks a:hover {
+  background-color: #ff4c4c;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Hamburger menu button */
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menuToggle:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    z-index: 10;
+  }
+
+  .navLinks.open {
+    display: flex;
+  }
+
+  .navLinks a {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo a {
+    font-size: 1.7rem;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+}

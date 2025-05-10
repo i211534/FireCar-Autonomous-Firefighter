@@ -1,0 +1,22 @@
+/backend
+    ├── /data                 # Store sample images for testing
+    │   ├── camera1.jpg
+    │   ├── camera2.jpg
+    │   ├── camera3.jpg
+    │   ├── camera4.jpg
+    │   ├── detected.jpg      # Added detected.jpg for output
+    │   └── stitched.jpg      # Added stitched.jpg for output
+    ├── /src                  # Main source code for stitching, mapping, detection
+    │   ├── __pycache__       # Python cache directory
+    │   ├── api.py            # API routes for Flask application
+    │   ├── image_stitching.py        # Handles image stitching using OpenCV
+    │   ├── occupancy_grid.py         # Converts stitched images to occupancy grid
+    │   ├── object_detection.py       # YOLO/SSD-based object detection implementation
+    │   └── main.py                   # Main script to run the system
+    ├── /models               # Pre-trained object detection models (e.g., YOLO, SSD)
+    │   ├── coco.names        # Class names for YOLO
+    │   ├── yolov3.cfg        # Configuration file for YOLO
+    │   └── yolov3.weights     # Weights file for YOLO
+    ├── /utils                # Utility functions like image pre-processing, grid operations
+    ├── /tests                # Test cases for individual components
+    └── requirements.txt      # Dependencies file for Python packages

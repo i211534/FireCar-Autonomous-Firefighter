@@ -1,0 +1,127 @@
+/* src/app/page.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #2c2c2c, #1a1a1a); /* Dark gray to black gradient */
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: calc(2rem + 2vw); /* Scales based on screen width */
+  font-weight: bold;
+  color: #ffffff; /* Bright white text */
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Soft shadow for 3D effect */
+  transition: transform 0.3s ease;
+}
+
+.title:hover {
+  transform: scale(1.05); /* Slight zoom on hover for interaction */
+}
+
+.instructions {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: calc(1rem + 0.5vw); /* Scales based on screen width */
+  margin-bottom: 1.5rem;
+  color: #cccccc; /* Light gray for subtitle */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for better visibility */
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.button {
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 12px; /* Slightly more rounded corners */
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Soft shadow for depth */
+  text-align: center;
+  width: auto;
+  min-width: 150px; /* Ensure buttons are not too small */
+}
+
+.button:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7); /* Stronger shadow on hover */
+}
+
+.button:focus {
+  outline: 3px solid #ffffff; /* Visible focus outline for accessibility */
+  outline-offset: 4px;
+}
+
+/* Red button for room map */
+.roomMapButton {
+  background-color: #d32f2f; /* Bright red */
+}
+
+.roomMapButton:hover {
+  background-color: #b71c1c; /* Darker red on hover */
+}
+
+/* Black button for camera feed */
+.cameraFeedButton {
+  background-color: #000000; /* Solid black */
+}
+
+.cameraFeedButton:hover {
+  background-color: #333333; /* Dark gray on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%; /* Ensure buttons occupy full width */
+  }
+
+  .button {
+    width: 100%; /* Full width for better usability on smaller screens */
+    padding: 0.8rem 1rem;
+    font-size: 1rem; /* Adjust size for smaller screens */
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+  }
+}
