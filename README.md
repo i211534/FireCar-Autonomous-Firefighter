@@ -28,5 +28,5 @@ cd firecar
 
 Contributions are welcome! For more information, see the [contribution guidelines](./CONTRIBUTING.md).
 
-https://github.com/i211534/FireCar-Autonomous-Firefighter/blob/master/image.jpeg
+![FireCar Image](https://github.com/i211534/FireCar-Autonomous-Firefighter/raw/master/image.jpeg)
 
