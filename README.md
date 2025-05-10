@@ -27,6 +27,6 @@ cd firecar
 ```
 
 Contributions are welcome! For more information, see the [contribution guidelines](./CONTRIBUTING.md).
-![image](https://github.com/user-attachments/assets/24dc64d3-d6c6-4c1c-b200-5411387caaba)
+
 ![image](https://github.com/user-attachments/assets/94430363-8849-4725-91b5-c7790dc05add)
 
