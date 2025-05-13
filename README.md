@@ -30,3 +30,5 @@ Contributions are welcome! For more information, see the [contribution guideline
 
 ![FireCar Image](https://github.com/i211534/FireCar-Autonomous-Firefighter/raw/master/image.jpeg)
 
+[Watch the Project Video](https://github.com/i211534/FireCar-Autonomous-Firefighter/blob/master/ProjectVideo.mp4)
+
