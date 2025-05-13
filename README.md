@@ -30,5 +30,5 @@ Contributions are welcome! For more information, see the [contribution guideline
 
 ![FireCar Image](https://github.com/i211534/FireCar-Autonomous-Firefighter/raw/master/image.jpeg)
 
-[Watch the Project Video](https://github.com/i211534/FireCar-Autonomous-Firefighter/blob/master/ProjectVideo.mp4)
+[Watch the FireCar Demo on LinkedIn](https://www.linkedin.com/posts/alyan-shahid-272a272bb_ai-robotics-computervision-activity-7327387840407887872-LPNF)
 
