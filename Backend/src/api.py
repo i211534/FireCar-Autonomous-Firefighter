@@ -17,7 +17,7 @@ app = Flask(__name__)
 CORS(app)
 
 # 1?? Configure SQLAlchemy
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://fire_db_owner:npg_1rhAszIRlj9Z@ep-young-band-a1x28jd0-pooler.ap-southeast-1.aws.neon.tech/fire_db?sslmode=require'
+app.config['SQLALCHEMY_DATABASE_URI'] = ''
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
