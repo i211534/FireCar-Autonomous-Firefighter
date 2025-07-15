@@ -1,0 +1,333 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #1a1a1a, #000000);
+  transition: background-color 0.5s ease;
+}
+
+.alertBanner {
+  width: 100%;
+  max-width: 90%;
+  padding: 1.2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.alert {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.allClear {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.cameraFeed {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(30, 30, 30, 0.7);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.feedHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.feedTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.refreshButton {
+  background-color: #0088cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.refreshButton:hover {
+  background-color: #006699;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.refreshButton:disabled {
+  background-color: #555555;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.feedPlaceholder {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #555555;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  color: #cccccc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.errorContainer {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background-color: rgba(50, 20, 20, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #d32f2f;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.errorMessage {
+  color: #ff8080;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.retryButton {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.retryButton:hover {
+  background-color: #b71c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.cameraImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 3px solid #555555;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.controlPanel {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.controlButton {
+  padding: 1rem 2.5rem;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.controlButton:hover {
+  background-color: #b71c1c;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .feedPlaceholder, .errorContainer {
+    height: auto;
+    max-width: 90%;
+  }
+  
+  .feedTitle {
+    font-size: 1.8rem;
+  }
+  
+  .controlButton {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+  
+  .refreshButton {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .feedHeader {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .feedTitle {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  .feedPlaceholder, .errorContainer {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+  
+  .errorMessage {
+    font-size: 1.2rem;
+  }
+  
+  .controlButton {
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .refreshButton, .retryButton {
+    width: 100%;
+    padding: 0.7rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .alertBanner {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  
+  .feedTitle {
+    font-size: 1.4rem;
+  }
+  
+  .errorMessage {
+    font-size: 1rem;
+  }
+  
+  .controlButton {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* New CSS for Threshold Controls */
+.thresholdControls {
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.thresholdControls h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #0d47a1;
+}
+
+.thresholdButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.thresholdButton {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  border: 1px solid #bbdefb;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.thresholdButton:hover {
+  background-color: #bbdefb;
+}
+
+.activeThreshold {
+  background-color: #2196f3;
+  color: white;
+  border-color: #1976d2;
+  font-weight: bold;
+}
+
+.customThresholdControl {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.customThresholdInput {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid #bbdefb;
+  border-radius: 4px;
+}
+
+.customThresholdButton {
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.customThresholdButton:hover {
+  background-color: #083378;
+}
+
+.currentThreshold {
+  color: white;
+  font-size: 14px;
+}

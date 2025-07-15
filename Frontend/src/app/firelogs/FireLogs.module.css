@@ -1,0 +1,76 @@
+/* src/app/firelogs/FireLogs.module.css */
+
+/* full-screen dark gradient background + centering */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #1a1a1a, #000000);
+    transition: background-color 0.5s ease;
+  }
+  
+  /* page title */
+  .container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* centered, scrollable table wrapper */
+  .tableWrapper {
+    width: 100%;
+    max-width: 960px;
+    overflow-x: auto;
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* your existing table styling, adapted for dark theme */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #f0f0f0;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #444;
+    padding: 0.6rem 1rem;
+    text-align: left;
+  }
+  
+  .table th {
+    background: #2a2a2a;
+    font-weight: 600;
+  }
+  
+  .table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.03);
+  }
+  
+  /* make sure the �Resolved� column icons stand out */
+  .table td:last-child {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  /* error message styling */
+  .error {
+    color: #ff8080;
+    margin-top: 1rem;
+  }
+  
+  /* loading / empty state */
+  .message {
+    color: #ccc;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  
