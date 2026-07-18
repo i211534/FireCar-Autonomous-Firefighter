@@ -12,12 +12,6 @@ Pi.
   />
 </p>
 
-<p align="center">
-  <a href="https://www.linkedin.com/posts/alyan-shahid-272a272bb_ai-robotics-computervision-activity-7327387840407887872-LPNF">
-    Watch the project demo
-  </a>
-</p>
-
 ## Overview
 
 FireCar explores an end-to-end perception-to-action pipeline for indoor fire
