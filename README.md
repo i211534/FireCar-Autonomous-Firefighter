@@ -237,9 +237,7 @@ should explain failure behavior and how the robot returns to a stopped state.
 
 ## License and third-party software
 
-This repository does not currently declare a project-level license. Until one
-is added, no general permission to use, modify, or redistribute the
-project-authored code should be assumed.
+This repository is shared for portfolio purposes. See [LICENSE](./LICENSE) for usage terms.
 
 `Backend/ultralytics-main` contains vendored Ultralytics software under its own
 AGPL-3.0 license. Review the Ultralytics license and the licensing of custom
